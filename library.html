@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/library.css">
+    <title>Bushmans Library</title>
+</head>
+<body>
+    <!-- <img src="images/bg-image.jpeg" alt=""> -->
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1><span><i class="material-icons">book</i>Bushmans Library</span></h1>
+            </div>
+            <div class="addBook">
+                <section>
+                    <div class="addBookButton">
+                        <input type="button" value="Add Book">     
+                    </div>
+                    <div class="addBookForm displayNone">
+                        <form action="#" method="post">
+                            <div class="bookTitle">
+                                <label for="addBookTitle">Title</label>
+                                <input type="text" name="bookTitle" id="addBookTitle" 
+                                class="reset"placeholder="Book title" required>
+                            </div>
+                            <div class="bookAuthor">
+                                <label for="addBookAuthor">Author</label>
+                                <input type="text" name="bookAuthor" id="addBookAuthor"
+                                class="reset" placeholder="Book author"  required>
+                            </div>
+                            <div class="bookPages">
+                                <label for="addBookTotalPages">Total Pages</label>
+                                <input type="number" name="bookTotalPages" id="addBookTotalPages"
+                                class="reset" placeholder="Number of pages" required>
+                            </div>
+                            <div class="readThis">
+                                <label for="haveReadThis">I read it</label>
+                                <input type="checkbox" name="bookPages" id="haveReadThis" required>
+                            </div>
+                            <div id="bookSubmit">
+                                <input type="button" value="Submit">
+                            </div>
+                        
+                            <button onclick="addNewBook()" class="close"><i  class="material-icons">close</i></button>
+                        
+                        </form>
+                        
+                    </div>
+                </section>
+            </div>
+        </header>
+        <hr>
+        <section>
+            <div class="table">
+                <table>
+                    <caption>Bushmans Library Book Collection</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">s/n</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Pages</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr data-index="0">
+                            <th scope="row">1</th>
+                            <td>Crises</td>
+                            <td>Obinna Paschal</td>
+                            <td>420</td>
+                            <td>read</td>
+                            <td class="closeButton"><i  class="material-icons">close</i></td>
+                        </tr>
+                        <tr data-index="1">
+                            <th scope="row">2</th>
+                            <td>Chike And The River</td>
+                            <td>Chinua Achebe</td>
+                            <td>240</td>
+                            <td>Not read</td>
+                            <td class="closeButton"><i  class="material-icons">close</i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="script\library.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/bg-image.jpeg");
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  color: #000000;
+}
+
+/* Centering body content */
+.container{
+    text-align: center;
+}
+
+header{
+    height: 150px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 30px;
+}
+/* Form section */
+ .addBook section, .addBookButton, .addBookForm{
+     height: 45px;
+     line-height: 45px;
+     border-radius: 3px;
+     width: 99%;
+     margin: 0 auto;  
+ }
+.addBook section{
+    margin-top: 30px;
+}
+.addBookButton input[type=button], .addBookForm input[type=button], .close i{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 3px;
+    background-color: transparent;
+    
+}
+.addBookButton input[type=button]:hover, .addBookForm div:hover{
+    background-color: rgba(74, 74, 74, 1);
+}
+.displayNone{
+    display: none;
+}
+
+
+/* .addBookForm, */
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+form div, .addBookButton, .close{
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: rgba(74, 74, 74, 0.5);
+}
+
+.close{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.close:hover{
+    background-color: rgb(255, 0, 0);
+}
+label, input[type=button]{
+    font-size: 1.2rem;
+    color: white;
+}
+
+#addBookTitle, #addBookAuthor, #addBookTotalPages{
+    border-radius: 10px;
+    height: 70%;
+    border: none;
+}
+
+.bookTitle, .bookAuthor, .bookPages{
+    width: 25%;
+}
+.readThis{
+    width: 10%;
+}
+#bookSubmit{
+    width: 10%;
+}
+.close{
+    width: 5%;
+}
+hr{
+    margin-top: 0;
+}
+
+/* Table section */
+table{
+    max-width: 80%;
+    table-layout: fixed;
+    display: inline-block;
+    border: 3px purple solid;
+    background-color: rgb(245, 245, 245);
+    border-collapse: collapse;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+}
+
+th, td, caption{
+    border: rgb(255, 255, 255) 1px solid;
+    padding: 5px 20px;
+}
+caption{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+thead th{
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(#646f7f, #4a5564);
+}
+/* .closeButton{
+    max-width: 100%;
+    max-height: 100%;
+} */
+tbody tr:nth-child(even){
+    background-color: rgb(228, 227, 227);
+}
+tbody tr:hover{
+    background-color: rgb(175, 175, 175);
+}
